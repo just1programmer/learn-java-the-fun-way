@@ -1,9 +1,9 @@
 import React from 'react'
 
-function spring_introduction() {
+function Spring_introduction() {
   return (
     <div>spring_introduction</div>
   )
 }
 
-export default spring_introduction
+export default Spring_introduction

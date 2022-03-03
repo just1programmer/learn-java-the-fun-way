@@ -1,9 +1,9 @@
 import React from 'react'
 
-function browsers() {
+function Browsers() {
   return (
     <div>browsers</div>
   )
 }
 
-export default browsers
+export default Browsers

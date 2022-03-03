@@ -1,9 +1,9 @@
 import React from 'react'
 
-function dry() {
+function Dry() {
   return (
     <div>dry</div>
   )
 }
 
-export default dry
+export default Dry

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function design_and_development_principles() {
+function Design_and_development_principles() {
   return (
     <div>design_and_development_principles</div>
   )
 }
 
-export default design_and_development_principles
+export default Design_and_development_principles

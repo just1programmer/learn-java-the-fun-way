@@ -1,9 +1,9 @@
 import React from 'react'
 
-function gradle() {
+function Gradle() {
   return (
     <div>gradle</div>
   )
 }
 
-export default gradle
+export default Gradle

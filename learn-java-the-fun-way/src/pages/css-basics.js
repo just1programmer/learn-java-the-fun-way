@@ -1,9 +1,9 @@
 import React from 'react'
 
-function css_basics() {
+function Css_basics() {
   return (
     <div>css_basics</div>
   )
 }
 
-export default css_basics
+export default Css_basics

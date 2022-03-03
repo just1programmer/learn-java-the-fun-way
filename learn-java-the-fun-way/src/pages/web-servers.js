@@ -1,9 +1,9 @@
 import React from 'react'
 
-function web_servers() {
+function Web_servers() {
   return (
     <div>web_servers</div>
   )
 }
 
-export default web_servers
+export default Web_servers

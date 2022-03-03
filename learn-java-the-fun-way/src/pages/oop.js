@@ -1,9 +1,9 @@
 import React from 'react'
 
-function oop() {
+function Oop() {
   return (
     <div>oop</div>
   )
 }
 
-export default oop
+export default Oop

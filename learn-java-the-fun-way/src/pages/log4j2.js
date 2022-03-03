@@ -1,9 +1,9 @@
 import React from 'react'
 
-function log4j2() {
+function Log4j2() {
   return (
     <div>log4j2</div>
   )
 }
 
-export default log4j2
+export default Log4j2

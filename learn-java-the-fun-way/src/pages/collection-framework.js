@@ -1,9 +1,9 @@
 import React from 'react'
 
-function collection_framework() {
+function Collection_framework() {
   return (
     <div>collection_framework</div>
   )
 }
 
-export default collection_framework
+export default Collection_framework

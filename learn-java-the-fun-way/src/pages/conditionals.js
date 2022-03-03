@@ -1,9 +1,9 @@
 import React from 'react'
 
-function conditionals() {
+function Conditionals() {
   return (
     <div>conditionals</div>
   )
 }
 
-export default conditionals
+export default Conditionals

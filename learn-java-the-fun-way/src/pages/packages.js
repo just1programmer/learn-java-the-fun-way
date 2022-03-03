@@ -1,9 +1,9 @@
 import React from 'react'
 
-function packages() {
+function Packages() {
   return (
     <div>packages</div>
   )
 }
 
-export default packages
+export default Packages

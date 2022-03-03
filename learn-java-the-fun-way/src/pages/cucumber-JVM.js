@@ -1,9 +1,9 @@
 import React from 'react'
 
-function cucumber_JVM() {
+function Cucumber_JVM() {
   return (
     <div>cucumber_JVM</div>
   )
 }
 
-export default cucumber_JVM
+export default Cucumber_JVM

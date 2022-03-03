@@ -1,9 +1,9 @@
 import React from 'react'
 
-function streams() {
+function Streams() {
   return (
     <div>streams</div>
   )
 }
 
-export default streams
+export default Streams

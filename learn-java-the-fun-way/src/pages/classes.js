@@ -1,9 +1,9 @@
 import React from 'react'
 
-function classes() {
+function Classes() {
   return (
     <div>classes</div>
   )
 }
 
-export default classes
+export default Classes

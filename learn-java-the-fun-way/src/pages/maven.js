@@ -1,9 +1,9 @@
 import React from 'react'
 
-function maven() {
+function Maven() {
   return (
     <div>maven</div>
   )
 }
 
-export default maven
+export default Maven

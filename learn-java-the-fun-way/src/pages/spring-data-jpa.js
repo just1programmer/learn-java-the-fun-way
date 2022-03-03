@@ -1,9 +1,9 @@
 import React from 'react'
 
-function spring_data_jpa() {
+function Spring_data_jpa() {
   return (
     <div>spring_data_jpa</div>
   )
 }
 
-export default spring_data-jpa
+export default Spring_data_jpa

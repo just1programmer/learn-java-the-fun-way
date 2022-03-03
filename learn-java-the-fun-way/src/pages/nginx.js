@@ -1,9 +1,9 @@
 import React from 'react'
 
-function nginx() {
+function Nginx() {
   return (
     <div>nginx</div>
   )
 }
 
-export default nginx
+export default Nginx

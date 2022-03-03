@@ -1,9 +1,9 @@
 import React from 'react'
 
-function loops() {
+function Loops() {
   return (
     <div>loops</div>
   )
 }
 
-export default loops
+export default Loops

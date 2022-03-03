@@ -1,9 +1,9 @@
 import React from 'react'
 
-function jpa() {
+function Jpa() {
   return (
     <div>jpa</div>
   )
 }
 
-export default jpa
+export default Jpa

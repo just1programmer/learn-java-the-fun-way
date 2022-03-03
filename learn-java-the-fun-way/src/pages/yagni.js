@@ -1,9 +1,9 @@
 import React from 'react'
 
-function yagni() {
+function Yagni() {
   return (
     <div>yagni</div>
   )
 }
 
-export default yagni
+export default Yagni

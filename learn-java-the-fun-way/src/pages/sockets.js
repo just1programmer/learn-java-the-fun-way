@@ -1,9 +1,9 @@
 import React from 'react'
 
-function sockets() {
+function Sockets() {
   return (
     <div>sockets</div>
   )
 }
 
-export default sockets
+export default Sockets

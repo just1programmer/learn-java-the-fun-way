@@ -1,9 +1,9 @@
 import React from 'react'
 
-function rest_apis() {
+function Rest_apis() {
   return (
     <div>rest_apis</div>
   )
 }
 
-export default rest_apis
+export default Rest_apis

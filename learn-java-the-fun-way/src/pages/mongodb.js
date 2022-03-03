@@ -1,9 +1,9 @@
 import React from 'react'
 
-function mongodb() {
+function Mongodb() {
   return (
     <div>mongodb</div>
   )
 }
 
-export default mongodb
+export default Mongodb
