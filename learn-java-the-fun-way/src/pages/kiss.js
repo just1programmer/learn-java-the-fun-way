@@ -1,9 +1,9 @@
 import React from 'react'
 
-function kiss() {
+function Kiss() {
   return (
     <div>kiss</div>
   )
 }
 
-export default kiss
+export default Kiss

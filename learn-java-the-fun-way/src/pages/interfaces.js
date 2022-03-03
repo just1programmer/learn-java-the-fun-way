@@ -1,9 +1,9 @@
 import React from 'react'
 
-function interfaces() {
+function Interfaces() {
   return (
     <div>interfaces</div>
   )
 }
 
-export default interfaces
+export default Interfaces

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function about_json() {
+function About_json() {
   return (
     <div>about_json</div>
   )
 }
 
-export default about_json
+export default About_json

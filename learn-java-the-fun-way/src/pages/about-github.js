@@ -1,9 +1,9 @@
 import React from 'react'
 
-function about_github() {
+function About_github() {
   return (
     <div>about_github</div>
   )
 }
 
-export default about_github
+export default About_github

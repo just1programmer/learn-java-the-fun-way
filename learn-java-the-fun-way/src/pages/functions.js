@@ -1,9 +1,9 @@
 import React from 'react'
 
-function functions() {
+function Functions() {
   return (
     <div>functions</div>
   )
 }
 
-export default functions
+export default Functions

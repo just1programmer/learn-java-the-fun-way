@@ -1,9 +1,9 @@
 import React from 'react'
 
-function solid() {
+function Solid() {
   return (
     <div>solid</div>
   )
 }
 
-export default solid
+export default Solid

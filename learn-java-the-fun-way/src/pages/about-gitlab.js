@@ -1,9 +1,9 @@
 import React from 'react'
 
-function about_gitlab() {
+function About_gitlab() {
   return (
     <div>about_gitlab</div>
   )
 }
 
-export default about_gitlab
+export default About_gitlab

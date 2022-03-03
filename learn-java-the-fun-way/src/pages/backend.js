@@ -1,9 +1,9 @@
 import React from 'react'
 
-function backend() {
+function Backend() {
   return (
     <div>backend</div>
   )
 }
 
-export default backend
+export default Backend

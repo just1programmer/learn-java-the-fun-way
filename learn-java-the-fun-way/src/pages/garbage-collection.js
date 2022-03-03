@@ -1,9 +1,9 @@
 import React from 'react'
 
-function garbage_collection() {
+function Garbage_collection() {
   return (
     <div>garbage_collection</div>
   )
 }
 
-export default garbage_collection
+export default Garbage_collection

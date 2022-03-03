@@ -1,9 +1,9 @@
 import React from 'react'
 
-function jdbc() {
+function Jdbc() {
   return (
     <div>jdbc</div>
   )
 }
 
-export default jdbc
+export default Jdbc

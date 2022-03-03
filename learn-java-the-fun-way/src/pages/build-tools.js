@@ -1,9 +1,9 @@
 import React from 'react'
 
-function build_tools() {
+function Build_tools() {
   return (
     <div>build_tools</div>
   )
 }
 
-export default build_tools
+export default Build_tools

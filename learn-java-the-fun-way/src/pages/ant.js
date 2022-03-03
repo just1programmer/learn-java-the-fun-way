@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ant() {
+function Ant() {
   return (
     <div>ant</div>
   )
 }
 
-export default ant
+export default Ant

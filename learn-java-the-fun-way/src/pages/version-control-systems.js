@@ -1,9 +1,9 @@
 import React from 'react'
 
-function version_control_systems() {
+function Version_control_systems() {
   return (
     <div>version_control_systems</div>
   )
 }
 
-export default version_control_systems
+export default Version_control_systems

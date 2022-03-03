@@ -1,9 +1,9 @@
 import React from 'react'
 
-function networking() {
+function Networking() {
   return (
     <div>networking</div>
   )
 }
 
-export default networking
+export default Networking

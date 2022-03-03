@@ -1,9 +1,9 @@
 import React from 'react'
 
-function spark() {
+function Spark() {
   return (
     <div>spark</div>
   )
 }
 
-export default spark
+export default Spark

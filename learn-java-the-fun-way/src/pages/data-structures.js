@@ -1,9 +1,9 @@
 import React from 'react'
 
-function data_structures() {
+function Data_structures() {
   return (
     <div>data_structures</div>
   )
 }
 
-export default data_structures
+export default Data_structures

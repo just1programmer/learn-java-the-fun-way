@@ -1,9 +1,9 @@
 import React from 'react'
 
-function behavior_testing() {
+function Behavior_testing() {
   return (
     <div>behavior_testing</div>
   )
 }
 
-export default behavior_testing
+export default Behavior_testing

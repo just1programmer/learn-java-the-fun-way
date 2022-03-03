@@ -1,9 +1,9 @@
 import React from 'react'
 
-function apis() {
+function Apis() {
   return (
     <div>apis</div>
   )
 }
 
-export default apis
+export default Apis

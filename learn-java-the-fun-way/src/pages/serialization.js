@@ -1,9 +1,9 @@
 import React from 'react'
 
-function serialization() {
+function Serialization() {
   return (
     <div>serialization</div>
   )
 }
 
-export default serialization
+export default Serialization

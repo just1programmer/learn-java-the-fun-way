@@ -1,9 +1,9 @@
 import React from 'react'
 
-function exception_handling() {
+function Exception_handling() {
   return (
     <div>exception_handling</div>
   )
 }
 
-export default exception_handling
+export default Exception_handling

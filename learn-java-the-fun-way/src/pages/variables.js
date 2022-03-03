@@ -1,9 +1,9 @@
 import React from 'react'
 
-function variables() {
+function Variables() {
   return (
     <div>variables</div>
   )
 }
 
-export default variables
+export default Variables

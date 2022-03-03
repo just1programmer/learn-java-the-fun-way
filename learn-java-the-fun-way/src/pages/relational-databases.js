@@ -1,9 +1,9 @@
 import React from 'react'
 
-function relational_databases() {
+function Relational_databases() {
   return (
     <div>relational_databases</div>
   )
 }
 
-export default relational_databases
+export default Relational_databases

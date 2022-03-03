@@ -1,8 +1,8 @@
 import React from 'react'
 
-function spring_boot() {
+function Spring_boot() {
   return (
     <div>spring-boot</div>
   )
 }
-export default spring_boot
+export default Spring_boot

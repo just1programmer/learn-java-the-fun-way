@@ -1,9 +1,9 @@
 import React from 'react'
 
-function postgreSQL() {
+function PostgreSQL() {
   return (
     <div>postgreSQL</div>
   )
 }
 
-export default postgreSQL
+export default PostgreSQL

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function terminal_usage() {
+function Terminal_usage() {
   return (
     <div>terminal-usage</div>
   )
 }
 
-export default terminal_usage
+export default Terminal_usage
