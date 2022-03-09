@@ -79,12 +79,14 @@ import Nginx from './pages/nginx'
 import What_is_scaling from './pages/what-is-scaling'
 import Home from './pages/home'
 import Sign_up from './pages/sign-up' 
+import Header from './components/Header'
 
 
 const App = ()=> {
     return(
         <Router>
             {/*Here we will use a Header component */}
+            <Header/>
             <h1>Hallo</h1>
             <Routes>
                 <Route path="/"/>
