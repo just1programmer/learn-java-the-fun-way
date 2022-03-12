@@ -81,22 +81,17 @@ import Home from '../pages/home'
 import Sign_up from '../pages/sign-up' 
 import Header from './ui/Header'
 import { Typography } from '@material-ui/core'
-
+import { ThemeProvider } from '@material-ui/styles'
+import theme from './ui/Theme'
 
 const App = ()=> {
     return(
         <Router>
             {/*Here we will use a Header component */}
-            <Header/>
-            <Typography variant='h6'> {[...new Array(120)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-            )
-            .join('\n')}</Typography>
-           
+            <ThemeProvider theme={theme}>
+                <Header/>
+            </ThemeProvider>
+            
             <Routes>
                 <Route path="/"/>
                 <Route path='basic-java-fundamentals' element={<Basic_java_fundamentals/>}/>

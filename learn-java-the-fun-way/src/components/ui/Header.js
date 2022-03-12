@@ -4,6 +4,8 @@ import { Toolbar } from '@material-ui/core'
 import { Typography } from '@material-ui/core'
 import { useScrollTrigger } from '@material-ui/core'
 import { Slide } from '@material-ui/core'
+import  {makeStyles} from '@material-ui/styles'
+import theme from './Theme'
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -36,26 +38,31 @@ function HideOnScroll(props) {
 }
 */
 
+const useStyles = makeStyles(theme => ({
+
+  toolbarMargin : {
+    ...theme.mixins.toolbar
+  }
+}))
+
+
 function Header() {
 
-  const style= {
-    background: 'linear-gradient(#000000,#0c1c23,#001c23)',
-    height: '60px',
-    opacity:'0.993'
-    // boxShadow: '0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)'
 
-  }
+  const classes = useStyles();
 
   return (
     
+    <React.Fragment>
      <HideOnScroll>
-      <AppBar style={style}>
+      <AppBar color="primary">
       <Toolbar>
           <Typography variant='h5'>Java : from 0 to Hero</Typography>
       </Toolbar>
       </AppBar>
       </HideOnScroll>
-
+      <div className={classes.toolbarMargin}/>
+    </React.Fragment>
   
   )
 }
