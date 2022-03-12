@@ -20,7 +20,7 @@ function HideOnScroll(props) {
 }
 
 
-function ElevationScroll(props) {
+/*function ElevationScroll(props) {
   const { children} = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
   
@@ -34,13 +34,13 @@ function ElevationScroll(props) {
     elevation: trigger ? 4 : 0,
   });
 }
-
+*/
 
 function Header() {
 
   const style= {
     background: 'linear-gradient(#000000,#0c1c23,#001c23)',
-    height: '8vh',
+    height: '60px',
     opacity:'0.993'
     // boxShadow: '0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)'
 
@@ -48,13 +48,13 @@ function Header() {
 
   return (
     
-    <ElevationScroll>
+     <HideOnScroll>
       <AppBar style={style}>
       <Toolbar>
           <Typography variant='h5'>Java : from 0 to Hero</Typography>
       </Toolbar>
       </AppBar>
-    </ElevationScroll>
+      </HideOnScroll>
 
   
   )
