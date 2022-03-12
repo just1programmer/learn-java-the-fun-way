@@ -51,7 +51,7 @@ function Header() {
     <ElevationScroll>
       <AppBar style={style}>
       <Toolbar>
-          <Typography variant='h4'>Java : from 0 to Hero</Typography>
+          <Typography variant='h5'>Java : from 0 to Hero</Typography>
       </Toolbar>
       </AppBar>
     </ElevationScroll>
