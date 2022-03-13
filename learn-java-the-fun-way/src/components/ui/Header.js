@@ -1,11 +1,13 @@
 import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
-import { Toolbar } from '@material-ui/core'
+import { Button, Toolbar } from '@material-ui/core'
 import { Typography } from '@material-ui/core'
 import { useScrollTrigger } from '@material-ui/core'
 import { Slide } from '@material-ui/core'
 import  {makeStyles} from '@material-ui/styles'
-import theme from './Theme'
+import { Tabs } from '@material-ui/core'
+import { Tab } from '@material-ui/core'
+
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -41,7 +43,35 @@ function HideOnScroll(props) {
 const useStyles = makeStyles(theme => ({
 
   toolbarMargin : {
-    ...theme.mixins.toolbar
+    ...theme.mixins.toolbar,
+    marginBottom: "3em"
+  },
+  logo : {
+    height : "7em",
+    width : "10em"
+  } ,
+  tabsContainer : {
+    marginLeft :"auto"
+  },
+  tab: {
+
+    fontFamily: "Raleway, sans-serif",
+    fontWeight: "800",
+    fontSize: "1rem",
+    textTransform: "none",
+    minWidth :10 ,
+    marginLeft : "25px"
+  },
+  button : {
+    marginLeft: "25px",
+    marginRight: "10px",
+    fontFamily: "monospace",
+    fontWeight: "600",
+    fontSize: "1rem",
+    borderRadius :"50px",
+    textTransform: "none",
+    color: "white",
+    height: "45px"
   }
 }))
 
@@ -56,8 +86,16 @@ function Header() {
     <React.Fragment>
      <HideOnScroll>
       <AppBar color="primary">
-      <Toolbar>
-          <Typography variant='h5'>Java : from 0 to Hero</Typography>
+      <Toolbar disableGutters={true}>
+       { /* <img alt="logo" src={logoimage} className={classes.logo}/> */}
+        <Typography variant='h5'>Transylvania Codecamp</Typography>
+        <Tabs className={classes.tabsContainer}>
+          <Tab className={classes.tab} label="Home"/>
+          <Tab className={classes.tab} label="About me"/>
+          <Tab className={classes.tab} label="Project overview"/>
+          <Tab className={classes.tab} label="Contact"/>
+        </Tabs>
+        <Button variant="contained" color="secondary" className={classes.button}>Sign up</Button>
       </Toolbar>
       </AppBar>
       </HideOnScroll>

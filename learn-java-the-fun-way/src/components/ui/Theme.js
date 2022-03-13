@@ -2,7 +2,7 @@ import { green } from '@material-ui/core/colors'
 import {createMuiTheme} from '@material-ui/core/styles'
 
 const darkBlue = "#0c1c23"
-const lightBlue = "#C2FAF8"
+const lightBlue = "#6cc6ff"
 const ThemeReadColor = "#107896"
 const theme=createMuiTheme({
     palette:{
@@ -20,10 +20,14 @@ const theme=createMuiTheme({
 
     },
     typography :{
-            h6 : {
-                fontSize: '48px',
-                color: `${ThemeReadColor}`
+            h5 : {
+                marginLeft:"15px"
+                
+            },
+            tab : {
+                color:"green"
             }
+
     }
 })
  
