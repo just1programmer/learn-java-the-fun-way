@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import { Button, Toolbar } from '@material-ui/core'
 import { Typography } from '@material-ui/core'
@@ -7,7 +7,7 @@ import { Slide } from '@material-ui/core'
 import  {makeStyles} from '@material-ui/styles'
 import { Tabs } from '@material-ui/core'
 import { Tab } from '@material-ui/core'
-
+import {Link} from 'react-router-dom'
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
 
   toolbarMargin : {
     ...theme.mixins.toolbar,
-    marginBottom: "3em"
+    marginBottom: "1em"
   },
   logo : {
     height : "7em",
@@ -80,6 +80,29 @@ function Header() {
 
 
   const classes = useStyles();
+  const [value,setValue] = useState(0)
+
+  const handleChange = (e,value) => {
+    console.log(value)
+    setValue(value)
+  }
+
+  useEffect(()=> {
+
+      if (window.location.pathname ==="/" && value !== 0){
+          setValue(0);
+      }
+      else if (window.location.pathname ==="/about-me" && value !== 1) {
+          setValue(1)
+      }
+      else if (window.location.pathname ==="/project-overview" && value !== 2) {
+        setValue(2)
+    }
+    else if (window.location.pathname ==="/contact" && value !== 3) {
+      setValue(3)
+  }
+
+  },[value])
 
   return (
     
@@ -89,11 +112,11 @@ function Header() {
       <Toolbar disableGutters={true}>
        { /* <img alt="logo" src={logoimage} className={classes.logo}/> */}
         <Typography variant='h5'>Transylvania Codecamp</Typography>
-        <Tabs className={classes.tabsContainer}>
-          <Tab className={classes.tab} label="Home"/>
-          <Tab className={classes.tab} label="About me"/>
-          <Tab className={classes.tab} label="Project overview"/>
-          <Tab className={classes.tab} label="Contact"/>
+        <Tabs value={value} className={classes.tabsContainer} onChange={handleChange}>
+          <Tab className={classes.tab} label="Home" component={Link} to="/"/>
+          <Tab className={classes.tab} label="About me" component={Link} to="/about-me"/>
+          <Tab className={classes.tab} label="Project overview" component={Link} to="/project-overview"/>
+          <Tab className={classes.tab} label="Contact" component={Link} to="/contact"/>
         </Tabs>
         <Button variant="contained" color="secondary" className={classes.button}>Sign up</Button>
       </Toolbar>

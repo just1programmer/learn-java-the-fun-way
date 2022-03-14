@@ -2,8 +2,7 @@ import { green } from '@material-ui/core/colors'
 import {createMuiTheme} from '@material-ui/core/styles'
 
 const darkBlue = "#0c1c23"
-const lightBlue = "#6cc6ff"
-const ThemeReadColor = "#107896"
+const lightBlue = "#328561"
 const theme=createMuiTheme({
     palette:{
         common:{

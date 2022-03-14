@@ -78,11 +78,14 @@ import Web_servers from '../pages/web-servers'
 import Nginx from '../pages/nginx'
 import What_is_scaling from '../pages/what-is-scaling'
 import Home from '../pages/home'
-import Sign_up from '../pages/sign-up' 
+import Sign_up from '../pages/sign-up'
+import About_me from '../pages/about-me' 
 import Header from './ui/Header'
 import { Typography } from '@material-ui/core'
 import { ThemeProvider } from '@material-ui/styles'
 import theme from './ui/Theme'
+import Contact from '../pages/contact'
+import Project_Overview from '../pages/project-overview'
 
 const App = ()=> {
     return(
@@ -91,25 +94,6 @@ const App = ()=> {
             <ThemeProvider theme={theme}>
                 <Header/>
             </ThemeProvider>
-            <p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p>
-            <p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p><p> Hello</p>
-            
             <Routes>
                 <Route path="/"/>
                 <Route path='basic-java-fundamentals' element={<Basic_java_fundamentals/>}/>
@@ -190,6 +174,9 @@ const App = ()=> {
                 <Route path='what-is-scaling' element={<What_is_scaling/>}/>
                 <Route path='home' element={<Home/>}/>
                 <Route path='sign-up' element={<Sign_up/>}/>
+                <Route path='about-me' element={<About_me/>}/>
+                <Route path='contact' element={<Contact/>}/>
+                <Route path='project-overview' element={<Project_Overview/>}/>
                 <Route path='*' element={<ErrorPage/>} />
             </Routes>
 
