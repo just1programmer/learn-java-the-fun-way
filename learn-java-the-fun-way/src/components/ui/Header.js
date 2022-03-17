@@ -118,7 +118,7 @@ function Header() {
           <Tab className={classes.tab} label="Project overview" component={Link} to="/project-overview"/>
           <Tab className={classes.tab} label="Contact" component={Link} to="/contact"/>
         </Tabs>
-        <Button variant="contained" color="secondary" className={classes.button}>Sign up</Button>
+        <Button variant="contained" color="secondary" className={classes.button} component={Link} to="/sign-up">Sign up</Button>
       </Toolbar>
       </AppBar>
       </HideOnScroll>
