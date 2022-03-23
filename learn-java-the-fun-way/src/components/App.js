@@ -81,11 +81,12 @@ import Home from '../pages/home'
 import Sign_up from '../pages/sign-up'
 import About_me from '../pages/about-me' 
 import Header from './ui/Header'
-import { Typography } from '@material-ui/core'
+import { Grid, Paper, Typography } from '@material-ui/core'
 import { ThemeProvider } from '@material-ui/styles'
 import theme from './ui/Theme'
 import Contact from '../pages/contact'
 import Project_Overview from '../pages/project-overview'
+import Footer from './ui/Footer'
 
 const App = ()=> {
     return(
@@ -93,8 +94,12 @@ const App = ()=> {
             {/*Here we will use a Header component */}
             <ThemeProvider theme={theme}>
                 <Header/>
-            </ThemeProvider>
-            <Routes>
+                <Grid container spacing={2}>
+                    <Grid item xs={3}>
+                        <Paper>Just hi</Paper>
+                    </Grid>
+                    <Grid item xs={9}>
+                          <Routes>
                 <Route path="/"/>
                 <Route path='basic-java-fundamentals' element={<Basic_java_fundamentals/>}/>
                 <Route path='data-types' element={<Data_types/>} />
@@ -179,7 +184,10 @@ const App = ()=> {
                 <Route path='project-overview' element={<Project_Overview/>}/>
                 <Route path='*' element={<ErrorPage/>} />
             </Routes>
-
+                    </Grid>
+                </Grid>
+                <Footer />
+            </ThemeProvider>
             {/* Here we will use a Footer element */}
         </Router>
        
