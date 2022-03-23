@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
 
   toolbarMargin : {
     ...theme.mixins.toolbar,
-    marginBottom: "1em"
+    
   },
   logo : {
     height : "7em",

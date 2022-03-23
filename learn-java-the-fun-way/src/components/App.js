@@ -96,7 +96,7 @@ const App = ()=> {
                 <Header/>
                 <Grid container spacing={2}>
                     <Grid item xs={3}>
-                        <Paper>Just hi</Paper>
+                        <p>I will be a drawer</p>
                     </Grid>
                     <Grid item xs={9}>
                           <Routes>

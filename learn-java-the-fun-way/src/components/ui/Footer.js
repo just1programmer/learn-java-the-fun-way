@@ -7,11 +7,15 @@ const useStyles = makeStyles(theme => ({
     position: 'fixed',
     left: 0,
     bottom: 0,
-    width:'100%',
+    width:'100vw',
     height:'6vh',
     backgroundColor:'#0c1c23',
     color: 'white',
     textAlign: 'center',
+  },
+  toolbarMargin : {
+    ...theme.mixins.toolbar,
+    
   }
 }))
 
@@ -20,13 +24,17 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
-    <div className={classes.footer} >
+    <React.Fragment>
+       <div className={classes.toolbarMargin}/>
+       <div className={classes.footer} >
          <Grid container spacing={5}>
             <Grid item xs={12} >
               <Typography variant='h6'>Copyright Ⓒ 2022 Transylvania Codecamp</Typography>
             </Grid>
             
          </Grid>
-    </div>
+        </div>
+    </React.Fragment>
+   
   )
 }
